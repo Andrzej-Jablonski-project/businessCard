@@ -1,5 +1,67 @@
-* {
-    margin: 0;
-    padding: 0;
+html {
     box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2C2141;
+    height: 100vh;
+    padding: 16px;
+}
+
+.card {
+    width: 100%;
+    max-width: 624px;
+    background: #f8f8f8;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.person {
+    display: flex;
+    align-items: flex-start;
+}
+
+.person__photo {
+    margin-right: 32px;
+    border-radius: 50%;
+}
+
+.person__header {
+    margin: 0 0 28px 0;
+}
+
+.person__name {
+    margin: 0;
+    font-size: 36px;
+    line-height: 41px;
+    font-weight: normal;
+}
+
+.person__profession {
+    color: #545454;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.person__description {
+    font-weight: normal;
+    line-height: 22px;
+}
+
+.person__description:last-child {
+    margin-bottom: 0;
+}
+
+.person__link {
+    color: red;
 }
